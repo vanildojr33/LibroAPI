@@ -7,6 +7,41 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Instalações de dependências
+
+Instalação do Apache
+ - sudo apt-get install apache2
+ 
+Instalando o módulo do servidor
+ - sudo apt-get install libapache2-mod-php
+ 
+Instalando módulos adicionais
+ - sudo apt-get install php-pgsql
+ - sudo apt-get install php-curl
+
+Instalação do Laravel
+ - Links abaixo
+
+Módulos PHP
+ - sudo apt-get install php-bcmath php-mbstring php-pgsql php-xml php-zip
+ 
+SGBD (postgreSQL)
+ - sudo apt-get install postgresql pgadmin3
+ 
+Verifique as configurações no arquivo .env
+
+    DB_CONNECTION=pgsql
+    DB_HOST=127.0.0.1
+    DB_PORT=5432
+    DB_DATABASE=XXXXXX
+    DB_USERNAME=XXXXX
+    DB_PASSWORD=XXXXX
+
+php artisan migrate
+
+php artisan db:seed (opcional)
+
+php artisan serve
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
